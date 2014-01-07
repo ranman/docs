@@ -16,6 +16,8 @@ Use a ``2d`` index if:
 
 - you do not intend to store any location data as :term:`GeoJSON` objects.
 
+- you intend on working with Euclidean planes and not spheres.
+
 Do not use a ``2d`` index if your location data includes GeoJSON objects. To
 index on both legacy coordinate pairs *and* GeoJSON objects, use a
 :doc:`2dsphere </core/2dsphere>` index.
